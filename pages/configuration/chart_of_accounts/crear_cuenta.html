@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- RECORDAR CORREGIR! -->
+  <title>Crear cuenta</title>
+  <link rel="stylesheet" href="../../../css/normalize.css" />
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="../../../css/forms.css" />
+  <link rel="stylesheet" href="../../../css/pruebas.css" />
+</head>
+
+<body id="body">
+  <header>
+    <div class="icon_menu" id="btn_open">
+      <img src="../../../assets/icons/bar.svg" />
+    </div>
+
+    <div class="title">
+      <!-- RECORDAR CORREGIR! -->
+      <h2>Crear cuenta</h2>
+    </div>
+
+    <div class="logout">
+      <img src="../../../assets/icons/logout.svg" class="list__img">
+      <a href="#" class="logout__link">Cerrar sesión</a>
+    </div>
+  </header>
+
+  <nav class="nav">
+
+    <div class="name__page" id="name_page">
+      <h2>Proyecto SISCOB</h2>
+    </div>
+
+    <ul class="list" id="list">
+
+      <li class="list__item list__item--click">
+        <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+        <div class="list__button list__botton--click">
+          <img src="../../../assets/icons/doc.svg" class="list__img" />
+          <a href="#" class="nav__link">Documentos</a>
+          <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+          <!-- Si tiene flecha es porqué es un menú desplegable -->
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Registrar</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Corregir</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Copiar</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Importar</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Imprimir</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item list__item--click">
+        <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+        <div class="list__button list__botton--click">
+          <img src="../../../assets/icons/report.svg" class="list__img" />
+          <a href="#" class="nav__link">Reportes</a>
+          <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+          <!-- Si tiene flecha es porqué es un menú desplegable -->
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Libro auxiliar / balance de prueba</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estado de situación financiera</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estado de resultados</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item list__item--click">
+        <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+
+        <div class="list__button list__botton--click">
+          <img src="../../../assets/icons/tools.svg" class="list__img" />
+          <a href="#" class="nav__link">Configuración</a>
+          <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+          <!-- Si tiene flecha es porqué es un menú desplegable -->
+        </div>
+
+        <ul class="list__show">
+          <li class="list__item list__item--click">
+            <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/user.svg" class="list__img" />
+              <a href="#" class="nav__link">Usuarios</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Insertar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Permisos</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Copiar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/receipt.svg" class="list__img" />
+              <a href="#" class="nav__link">Comprobantes</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Insertar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/people-group.svg" class="list__img" />
+              <a href="#" class="nav__link">Terceros</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Insertar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/puc.svg" class="list__img" />
+              <a href="#" class="nav__link">Plan de cuentas</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear cuenta</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar cuenta</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar cuenta</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/ceco.svg" class="list__img" />
+              <a href="#" class="nav__link">Centro de costos</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/business.svg" class="list__img" />
+              <a href="#" class="nav__link">Empresas</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/countries.svg" class="list__img" />
+              <a href="#" class="nav__link">Países</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/departments.svg" class="list__img" />
+              <a href="#" class="nav__link">Departamentos</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/map.svg" class="list__img" />
+              <a href="#" class="nav__link">Ciudades</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <main class="content">
+
+    <form action="javascript:alert('Hello there, I am being submitted');">
+
+
+      <div class="div-row">
+        <p class="label-without_check label-without_check-ext">Ingrese los siguientes datos:</p>
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="dpto" class="label-without_check label-without_check-ext2">Tipo</label>
+        <select id="dpto" class="data-app data-app_ext">
+          <option value="1">Cuenta de movimiento</option>
+          <option value="2">Cuenta mayor</option>
+        </select>
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="dpto" class="label-without_check label-without_check-ext2">Nivel</label>
+        <select id="dpto" class="data-app data-app_ext" disabled>
+          <option value="1">1 - Clase (un dígito)</option>
+          <option value="2">2 - Grupo (dos dígitos)</option>
+          <option value="4">3 - Cuenta (cuatro dígitos)</option>
+          <option value="6">4 - Subcuenta (seis dígitos)</option>
+        </select>
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="nid" class="label-without_check label-without_check-ext2">Código</label>
+        <input id="nid" type="text" class="data-app data-app_ext">
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="nom1" class="label-without_check label-without_check-ext2">Nombre</label>
+        <input id="nom1" type="text" class="data-app data-app_ext">
+      </div>
+
+      <div class="div-row">
+        <label for="activo" class="label-without_check label-without_check-ext2">Maneja centro de costos</label>
+        <input id="activo" type="checkbox" name="movimiento">
+      </div>
+
+      <div class="div-row">
+        <label for="activo" class="label-without_check label-without_check-ext2">Maneja tercero</label>
+        <input id="activo" type="checkbox" name="movimiento">
+      </div>
+
+      <div class="div-row">
+        <label for="activo" class="label-without_check label-without_check-ext2">Maneja documento</label>
+        <input id="activo" type="checkbox" name="movimiento">
+      </div>
+
+      <div class="div-row">
+        <label for="activo" class="label-without_check label-without_check-ext2">Maneja activos fijos</label>
+        <input id="activo" type="checkbox" name="movimiento">
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="nom1" class="label-without_check label-without_check-ext2">Base impuesto / retención</label>
+        <input id="activo" type="checkbox" name="movimiento">
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="dpto" class="label-without_check label-without_check-ext2">Seleccione impto / retención</label>
+        <select id="dpto" class="data-app data-app_ext">
+          <option value="11">IVA</option>
+          <option value="11">IVA mayor valor</option>
+          <option value="13">Retefuente por pagar</option>
+          <option value="13">Retefuente asumida</option>
+          <option value="21">Retefuente por cobrar</option>
+          <option value="22">Retención IVA por pagar</option>
+          <option value="22">Retención IVA asumida</option>
+          <option value="22">Retención IVA por cobrar</option>
+          <option value="12">Impuesto al consumo</option>
+          <option value="31">Timbre</option>
+        </select>
+      </div>
+
+      <div class="div-row div-row-ext">
+        <label for="nom1" class="label-without_check label-without_check-ext2">Tarifa</label>
+        <input id="nom1" type="text" class="data-app data-app_ext">
+      </div>
+
+      <div class="div-row">
+        <label for="activo" class="label-without_check label-without_check-ext2">Activo</label>
+        <input id="activo" type="checkbox" name="movimiento">
+      </div>
+
+      <div class="div-row center-div">
+        <input type="submit" value="Cancelar" class="two_buttons">
+        <input type="submit" value="Aceptar" class="two_buttons">
+      </div>
+
+      <!--Pruebas a partir de aquí-->
+
+
+      <!--Pruebas hasta aquí-->
+
+    </form>
+
+  </main>
+
+
+
+
+  <script src="../../../js/main.js"></script>
+  <script src="../../../js/forms.js"></script>
+  <script src="../../../js/pruebas.js"></script>
+</body>
+
+</html>

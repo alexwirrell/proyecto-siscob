@@ -1,0 +1,43 @@
+/* Clase usada en la lista desplegable de "Configuración/Usuarios/Permisos" */
+.perm-select-ext {
+    width: 270px;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+}
+
+.permisos-list {
+    list-style: none;
+    display: none;
+}
+
+.permisos-menu {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.conf-submenu {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.list-option {
+    padding-left: 20px;
+    margin: 5px;
+}
+
+.list-option-ext {
+    padding-left: 40px;
+}
+
+.permisos_list-click {
+    cursor: pointer;
+}
+
+.plus-minus {
+    margin-right: 5px;
+    vertical-align: middle;
+}

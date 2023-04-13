@@ -1,0 +1,170 @@
+.datatable-container {
+    background-color: #fff;
+    border-radius: 0.5px;
+}
+
+.datatable-container .header-tools {
+    border-bottom: solid 1px;
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .search{
+    width: 30%;
+}
+
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.datatable-container .header-tools .tools{
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    list-style: none;
+}
+
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.datatable-container .footer-tools{
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools .list-items{
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .header-tools .tools ul li button{
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .footer-tools .pages ul li button:hover,
+.datatable-container .header-tools .tools ul li button:hover{
+    background: #eeeeee;
+}
+
+.datatable-container .footer-tools .pages ul li span.active{
+    background: #eeeeee;
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .header-tools .tools ul li button{
+    padding: 10px;
+}
+
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: 10px;
+}
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px;
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 1px;
+}
+
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: #eeeeee;
+}
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: #b8b8b8;
+}
+
+.datatable-container .datatable tr .available::after,
+.datatable-container .datatable tr .away::after,
+.datatable-container .datatable tr .offline::after{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.datatable-container .datatable tr .available::after{
+    content: 'Available';
+    color: green;
+}
+
+.datatable-container .datatable tr .away::after{
+    content: 'Away';
+    color: orange;
+}
+
+.datatable-container .datatable tr .offline::after{
+    content: 'Offline';
+    color: red;
+}
+
+.datatable-container .datatable tr .available::before,
+.datatable-container .datatable tr .away::before,
+.datatable-container .datatable tr .offline::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.datatable-container .datatable tr .available::before{
+    background-color: green;
+}
+
+.datatable-container .datatable tr .away::before{
+    background-color: orange;
+}
+
+.datatable-container .datatable tr .offline::before{
+    background-color: red;
+}

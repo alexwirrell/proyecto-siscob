@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- RECORDAR CORREGIR ESTO TAN HORRIBLE! -->
+  <title>Permisos</title>
+  <link rel="stylesheet" href="../../../css/normalize.css" />
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="../../../css/forms.css" />
+  <link rel="stylesheet" href="../../../css/permisos.css" />
+</head>
+
+<body id="body">
+  <header>
+    <div class="icon_menu" id="btn_open">
+      <img src="../../../assets/icons/bar.svg" />
+    </div>
+
+    <div class="title">
+      <!-- RECORDAR CORREGIR ESTO TAN HORRIBLE! -->
+      <h2>Permisos</h2>
+    </div>
+
+    <div class="logout">
+      <img src="../../../assets/icons/logout.svg" class="list__img">
+      <a href="#" class="logout__link">Cerrar sesión</a>
+    </div>
+  </header>
+
+  <nav class="nav">
+
+    <div class="name__page" id="name_page">
+      <h2>Proyecto SISCOB</h2>
+    </div>
+
+    <ul class="list" id="list">
+
+      <li class="list__item list__item--click">
+        <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+        <div class="list__button list__botton--click">
+          <img src="../../../assets/icons/doc.svg" class="list__img" />
+          <a href="#" class="nav__link">Documentos</a>
+          <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+          <!-- Si tiene flecha es porqué es un menú desplegable -->
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Registrar</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Corregir</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Copiar</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Importar</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Imprimir</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item list__item--click">
+        <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+        <div class="list__button list__botton--click">
+          <img src="../../../assets/icons/report.svg" class="list__img" />
+          <a href="#" class="nav__link">Reportes</a>
+          <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+          <!-- Si tiene flecha es porqué es un menú desplegable -->
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Libro auxiliar / balance de prueba</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estado de situación financiera</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estado de resultados</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item list__item--click">
+        <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+
+        <div class="list__button list__botton--click">
+          <img src="../../../assets/icons/tools.svg" class="list__img" />
+          <a href="#" class="nav__link">Configuración</a>
+          <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+          <!-- Si tiene flecha es porqué es un menú desplegable -->
+        </div>
+
+        <ul class="list__show">
+          <li class="list__item list__item--click">
+            <!--se agrega "list__item--click" a los que tengan listas desplegable (elementos adentro)-->
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/user.svg" class="list__img" />
+              <a href="#" class="nav__link">Usuarios</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Insertar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Permisos</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Copiar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/receipt.svg" class="list__img" />
+              <a href="#" class="nav__link">Comprobantes</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Insertar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/people-group.svg" class="list__img" />
+              <a href="#" class="nav__link">Terceros</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Insertar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/puc.svg" class="list__img" />
+              <a href="#" class="nav__link">Plan de cuentas</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear cuenta</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar cuenta</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar cuenta</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/ceco.svg" class="list__img" />
+              <a href="#" class="nav__link">Centro de costos</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Importar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/business.svg" class="list__img" />
+              <a href="#" class="nav__link">Empresas</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/countries.svg" class="list__img" />
+              <a href="#" class="nav__link">Países</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/departments.svg" class="list__img" />
+              <a href="#" class="nav__link">Departamentos</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+            <div class="list__button list__subbotton--click">
+              <img src="../../../assets/icons/map.svg" class="list__img" />
+              <a href="#" class="nav__link">Ciudades</a>
+              <img src="../../../assets/icons/arrow.svg" class="list__arrow" />
+              <!-- Si tiene flecha es porqué es un menú desplegable -->
+            </div>
+
+            <ul class="list__show list__item">
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Crear</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Retirar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Editar</a>
+              </li>
+
+              <li class="list__inside">
+                <a href="#" class="nav__link nav__link--inside">Exportar a Excel</a>
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <main class="content">
+
+
+    <form action="javascript:alert('Hello there, I am being submitted');">
+      <div class="div-row">
+
+        <label for="mod_user" class="mod_user">Modificar acceso para el usuario:</label>
+
+        <select name="select" class="perm-select-ext">
+          <option value="value1">Value 1</option>
+          <option value="value2">Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <fieldset class="">
+
+          <legend>Seleccione los accesos del usuario</legend>
+
+          <div>
+
+            <div class="permisos_list-click">
+              <img id="prueba-img" src="../../../assets/icons/plus.svg">
+              <h3 class="permisos-menu">Documentos</h3>
+            </div>
+
+            <ul class="permisos-list">
+              <li class="list-option">
+                <input type="checkbox" name="docs" id="docs_reg">
+                <label for="docs_reg">Registrar</label>
+              </li>
+              <li class="list-option">
+                <input type="checkbox" name="docs" id="docs_corr">
+                <label for="docs_corr">Corregir</label>
+              </li>
+              <li class="list-option">
+                <input type="checkbox" name="docs" id="docs_cop">
+                <label for="docs_cop">Copiar</label>
+              </li>
+              <li class="list-option">
+                <input type="checkbox" name="docs" id="docs_import">
+                <label for="docs_import">Importar</label>
+              </li>
+
+              <li class="list-option">
+                <input type="checkbox" name="docs" id="docs_print">
+                <label for="docs_print">Imprimir</label>
+              </li>
+            </ul>
+
+            <div class="permisos_list-click">
+              <img id="prueba-img" src="../../../assets/icons/plus.svg">
+              <h3 class="permisos-menu">Reportes</h3>
+            </div>
+
+            <ul class="permisos-list">
+              <li class="list-option">
+                <input type="checkbox" name="reports" id="report-laux">
+                <label for="report-laux">Libro auxiliar / balance de prueba</label>
+              </li>
+              <li class="list-option">
+                <input type="checkbox" name="reports" id="esfa">
+                <label for="esfa">Estado de situación financiera</label>
+              </li>
+              <li class="list-option">
+                <input type="checkbox" name="reports" id="eerr">
+                <label for="eerr">Estado de resultados</label>
+              </li>
+            </ul>
+
+
+
+            <!--
+                  Pueden anidarse listas (es decir, una dentro de otra) sin límite. Incluso se pueden combinar <ol></ol> y <ul class="permisos-list"></ul>.
+      
+                  Para hacerlo, la lista hija debe estar dentro de un <li></li>, y justo antes de la etiqueta de cierre </li>.
+      
+              -->
+
+            <div class="permisos_list-click">
+              <img id="prueba-img" src="../../../assets/icons/plus.svg">
+              <h3 class="permisos-menu">Configuración</h3>
+            </div>
+
+            <ul class="permisos-list">
+              <li>
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Usuarios</h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-users" id="users-insertar">
+                    <label for="users-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-users" id="users-retirar">
+                    <label for="users-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-users" id="users-editar">
+                    <label for="users-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-users" id="users-permisos">
+                    <label for="users-permisos">Permisos</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-users" id="users-copiar">
+                    <label for="users-copiar">Copiar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-users" id="users-expexcel">
+                    <label for="users-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Comprobantes</h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-compr" id="compr-insertar">
+                    <label for="compr-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-compr" id="compr-retirar">
+                    <label for="compr-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-compr" id="compr-editar">
+                    <label for="compr-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-compr" id="compr-importar">
+                    <label for="compr-importar">Importar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-compr" id="compr-expexcel">
+                    <label for="compr-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Terceros</h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-terc" id="terc-insertar">
+                    <label for="terc-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-terc" id="terc-retirar">
+                    <label for="terc-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-terc" id="terc-editar">
+                    <label for="terc-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-terc" id="terc-importar">
+                    <label for="terc-importar">Importar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-terc" id="terc-expexcel">
+                    <label for="terc-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Plan de cuentas
+                </h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-puc" id="puc-insertar">
+                    <label for="puc-insertar">Crear</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-puc" id="puc-retirar">
+                    <label for="puc-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-puc" id="puc-editar">
+                    <label for="puc-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-puc" id="puc-importar">
+                    <label for="puc-importar">Importar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-puc" id="puc-expexcel">
+                    <label for="puc-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Centro de costos
+                </h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-ceco" id="ceco-insertar">
+                    <label for="ceco-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-ceco" id="ceco-retirar">
+                    <label for="ceco-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-ceco" id="ceco-editar">
+                    <label for="ceco-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-ceco" id="ceco-importar">
+                    <label for="ceco-importar">Importar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-ceco" id="ceco-expexcel">
+                    <label for="ceco-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Empresas</h4>
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-emp" id="emp-insertar">
+                    <label for="emp-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-emp" id="emp-retirar">
+                    <label for="emp-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-emp" id="emp-editar">
+                    <label for="emp-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-emp" id="emp-expexcel">
+                    <label for="emp-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Países</h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-pais" id="pais-insertar">
+                    <label for="pais-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-pais" id="pais-retirar">
+                    <label for="pais-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-pais" id="pais-editar">
+                    <label for="pais-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-pais" id="pais-expexcel">
+                    <label for="pais-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+
+
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Departamentos</h4>
+
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-dpto" id="dpto-insertar">
+                    <label for="dpto-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-dpto" id="dpto-retirar">
+                    <label for="dpto-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-dpto" id="dpto-editar">
+                    <label for="dpto-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-dpto" id="dpto-expexcel">
+                    <label for="dpto-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 class="conf-submenu permisos_list-click"><img class="plus-minus"
+                    src="../../../assets/icons/plus.svg">Ciudades</h4>
+                <ul class="permisos-list">
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-cdd" id="cdd-insertar">
+                    <label for="cdd-insertar">Insertar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-cdd" id="cdd-retirar">
+                    <label for="cdd-retirar">Retirar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-cdd" id="cdd-editar">
+                    <label for="cdd-editar">Editar</label>
+                  </li>
+                  <li class="list-option list-option-ext">
+                    <input type="checkbox" name="conf-cdd" id="cdd-expexcel">
+                    <label for="cdd-expexcel">Exportar a Excel</label>
+                  </li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+
+        </fieldset>
+      </div>
+
+      <div class="div-row center-div">
+        <input type="submit" value="Cancelar" class="two_buttons">
+        <input type="submit" value="Aceptar" class="two_buttons">
+      </div>
+
+      <!--Pruebas a partir de aquí-->
+
+      <!--Pruebas hasta aquí-->
+
+    </form>
+
+  </main>
+
+
+
+
+  <script src="../../../js/main.js"></script>
+  <script src="../../../js/forms.js"></script>
+  <script src="../../../js/permisos.js"></script>
+</body>
+
+</html>

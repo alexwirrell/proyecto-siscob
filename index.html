@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+
+
+    <div class="login">
+
+        <div class="title__index">
+            <h1>SISCOB</h1>
+            <h2>Sistema contable básico</h2>
+            <h3>Ingrese los datos para conectarse</h3>
+        </div>
+
+        <div class="line">
+            <label for="company" class="label">Compañía</label>
+            <select name="company" id="cia" class="data">
+                <option value="1">Compañía 1</option>
+                <option value="2">Compañía 2</option>
+            </select>
+        </div>
+
+        <div class="line">
+            <label for="database" class="label">Base de datos</label>
+            <select name="database" id="db" class="data">
+                <option value="1">BD Compañía 1</option>
+                <option value="2">BD Compañía 1 (pruebas)</option>
+            </select>
+        </div>
+
+        <div class="line">
+            <label for="user" class="label">Usuario</label>
+            <input name="user" type="text" class="data">
+        </div>
+
+        <div class="line">
+            <label for="password" class="label">Contraseña</label>
+            <input name="password" type="password" class="data">
+        </div>
+
+        <div class="line">
+            <input type="submit" value="Ingresar" class="button">
+            <input type="submit" value="Cancelar" class="button">
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

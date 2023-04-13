@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eaebef;
+  font-family: "Poppins", sans-serif;
+  transition: margin-left 300ms;
+  background-color: #fff; /* Color blanco de fondo en el body 221222022*/
+}
+
+.icon_menu {
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logout {
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  width: 100px;
+  right: 15px;
+}
+
+.nav {
+  width: 300px;
+}
+
+.nav__link {
+  color: #303440;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  text-align: left;
+}
+
+.logout__link {
+  color: #303440;
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.nav__link--inside {
+  border-radius: 6px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.nav__link--inside:hover {
+  background: #f6f8fa;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  margin-left: 300px;
+}
+
+.name__page {
+  padding: 30px;
+  text-align: center;
+  height: 80px;
+  top: 0;
+  background: #fff;
+  position: fixed;
+  width: 300px;
+  z-index: 200;
+}
+
+.list {
+  width: 300px;
+  height: 100%;
+  padding-top: 80px;
+  top: 0;
+  position: fixed;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+/*Ocultar scroll para chrome para chrome, safari y opera*/
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+/*Ocultar scroll para chrome para IR, Edge y Firefox*/
+.list {
+  -ms-overflow-style: none;
+}
+
+.list__arrow {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.list__button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.list__item {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list__item--click {
+  cursor: pointer;
+}
+
+.list__show {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #303440;
+  list-style: none;
+  transition: height 0.3s;
+  height: 0;
+}
+
+.arrow .list__arrow {
+  transform: rotate(90deg);
+}
+
+/*Clases pasa usar en JavaScript*/
+
+.body_move {
+  margin-left: -300px;
+}
+
+.content {
+  margin-top: 80px;
+  margin-left: 300px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+  /* position: fixed; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+/* .title {
+  width: 559px;
+  text-align: left;
+} */
+
