@@ -21,6 +21,8 @@ _Como es un proyecto que persigue el aprendizaje de sus integrantes, se utilizar
 
 ## Configuración del entorno de desarrollo 🗺️
 
+_Nota: En los vídeos favor disculpa la calidad del audio_
+
 1. Descargar e instalar PostgreSQL.
 
 https://user-images.githubusercontent.com/102885471/234153777-0684a27f-2106-499f-8206-7ff86a4da245.mp4
@@ -32,6 +34,10 @@ Seguir las instrucciones de la página oficial. En este enlace se encuentran: ht
 En nuestro caso, usaremos Windows:
 
 Ir a la página https://github.com/PostgREST/postgrest/releases/ y descargar la última versión del ejecutable.
+
+Para más información, mira el siguiente vídeo:
+
+https://user-images.githubusercontent.com/102885471/234163039-639a318a-4053-4fcc-b0d2-4996452bc6b2.mp4
 
 2.1. Configurar el archivo "postgrest.conf"
 
@@ -46,7 +52,11 @@ db-uri = "postgres://web_user:1234@localhost:5432/pruebas_siscob"
 db-anon-role = "web_user"
 ```
 
-Después, a medida que se deseen agregar más configuraciones se pueden establecer. Para esto puede remitirse a la documentación de PostgREST para ver que las opciones de configuración disponibles.
+Estas líneas se pegarían en un archivo de texto y se guardaría con el nombre que se quiera, para nuestro caso lo nombraremos "postgrest.conf".
+
+_Nota: Puedes asignar el nombre que quieras, pero la extensión debe ser .config_
+
+Si deseen agregar más configuraciones se pueden establecer. Para esto puede remitirse a la documentación de PostgREST para ver que las opciones de configuración disponibles.
 
 3. Ejecutar el script para la creación de la base de datos.
 
