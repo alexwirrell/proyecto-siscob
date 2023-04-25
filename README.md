@@ -21,7 +21,7 @@ _Como es un proyecto que persigue el aprendizaje de sus integrantes, se utilizar
 
 ## Configuración del entorno de desarrollo 🗺️
 
-_Nota: En los vídeos favor disculpa la calidad del audio_
+_Nota: En los vídeos por favor disculpa la calidad del audio_
 
 1. Descargar e instalar PostgreSQL.
 
