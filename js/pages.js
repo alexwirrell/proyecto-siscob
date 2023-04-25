@@ -1,10 +1,9 @@
-import {BuildRef, List, open_close_menu} from './dropdownMenu.js'
-
 import {laux_bprueba} from './pages/reports/laux_bprueba.js'
 import {esfa} from './pages/reports/esfa.js'
 import {eerr} from './pages/reports/eerr.js'
 import {add_costcenter} from './pages/configuration/cost_center/add_costcenter.js'
-import {listcostcenter} from '/js/controllers/cecoController.js'
+import { read } from './datatable.js';
+
 
 function contentPage(route) {
   switch (route) {
@@ -27,7 +26,7 @@ function contentPage(route) {
     case "#ConfPlaLis_16": return alert("Formulario en construcción para futuras actualizaciones");
     case "#ConfCenAgr_17": return add_costcenter();
     case "#ConfCenImp_18": return alert("Formulario en construcción para futuras actualizaciones");
-    case "#ConfCenLis_19": return listcostcenter();
+    case "#ConfCenLis_19": return read();
     case "#ConfPaíAgr_20": return alert("Formulario en construcción para futuras actualizaciones");
     case "#ConfPaíLis_21": return alert("Formulario en construcción para futuras actualizaciones");
     case "#ConfDepAgr_22": return alert("Formulario en construcción para futuras actualizaciones");
