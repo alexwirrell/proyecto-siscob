@@ -26,7 +26,7 @@ function add_costcenter() {
     </div>
 
     <div class="div-row center-div">
-      <input type="submit" value="Cancelar" class="two_buttons">
+      <input type="submit" value="Cancelar" class="two_buttons" onclick="">
       <input type="submit" value="Aceptar" class="two_buttons">
     </div>
   </form>
@@ -56,7 +56,7 @@ function addCostCenter(idform) {
 
     // Imprime el mensaje correspondiente en la consola
     if (accion === "Cancelar") {
-      console.log("Cancelar");
+      location.href='menu.html';
     } else if (accion === "Aceptar") {
       const addData = {
         cc_cod: document.querySelector('#codceco').value,
