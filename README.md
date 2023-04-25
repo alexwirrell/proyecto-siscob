@@ -23,6 +23,8 @@ _Como es un proyecto que persigue el aprendizaje de sus integrantes, se utilizar
 
 1. Descargar e instalar PostgreSQL.
 
+https://user-images.githubusercontent.com/102885471/234153777-0684a27f-2106-499f-8206-7ff86a4da245.mp4
+
 2. Descargar e instalar PostgREST:
 
 Seguir las instrucciones de la página oficial. En este enlace se encuentran: https://postgrest.org/en/stable/install.html#installation
