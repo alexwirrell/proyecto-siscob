@@ -25,14 +25,18 @@ function edit_costcenter(values) {
     </div>
 
     <div class="div-row center-div">
-        <input type="submit" value="Cancelar" class="two_buttons">
+        <input type="submit" value="Cancelar" class="two_buttons" >
         <input type="submit" value="Aceptar" class="two_buttons">
     </div>
 </form>
 `
 document.querySelector(".content").innerHTML = edit_costcenter;
 
+//Toma el formulario completo. El que esta en la parte de arriba como template string
 const formulario = document.getElementById("editceco");
+
+// Dos botones: cancelar y aceptar. Se captura la información de los campos y se pasan como parametro a la función.
+// En este caso sería útil tener un objeto con los campos de cada formulario (?)
 
 formulario.addEventListener("submit", (event) => {
   // Previene el envío del formulario
@@ -46,7 +50,7 @@ formulario.addEventListener("submit", (event) => {
 
   // Imprime el mensaje correspondiente en la consola
   if (accion === "Cancelar") {
-    console.log("Cancelar");
+    location.href='menu.html#ConfCenLis_19';
   } else if (accion === "Aceptar") {
     const editData = {
       cc_nom: document.querySelector('#nomceco').value,
