@@ -1,5 +1,16 @@
 import {edit_costcenter} from '/js/pages/configuration/cost_center/edit_costcenter.js'
-import {delCeco} from '../js/controllers/cecoController.js'
+import {delCeco, listcostcenter} from '../js/controllers/cecoController.js'
+
+import {open_close_menu} from './dropdownMenu.js'
+import {list} from './main.js';
+
+async function read() {
+  const dt = new DataTable();
+  dt.createtable(await listcostcenter());
+  if(!body.classList.contains("body_move")) {
+      open_close_menu(list);
+  }
+}
 
 function edit(selected){
   if(selected.length > 1 || selected.length === 0){
@@ -18,7 +29,9 @@ function del(selected){
   } else {
     if(confirm("¿Esta seguro que desea eliminar los datos?")){
       const regDel = selected.map((element) => element.values[0]);
+      //document.querySelector('input[data-id="109200919185911000"]').parentElement.parentElement
       delCeco(...regDel);
+      //TODO: al eliminar elementos se debe refrescar la tabla
     } else {
       alert("no, me dió miedo");
     }
@@ -410,7 +423,18 @@ class DataTable {
       this.items = [row, ...this.items];
       this.makeTable();
     }
-
+//////////
+    addData(data) {
+      this.items.push(data);
+      this.makeTable();
+    }
+  
+    removeItems(id) {
+      this.items = this.items.filter(item => item.id !== id);
+      console.log(this.items);
+      this.makeTable();
+    }
+//////////
     createtable(data) {
       const dt = this;
       dt.parse(["", ...Object.keys(data[0])]);
@@ -421,4 +445,6 @@ class DataTable {
     };
   }
 
-  export {DataTable};
+  
+
+  export {DataTable, read};
