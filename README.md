@@ -86,18 +86,20 @@ _Nota: Puedes asignar el nombre que quieras, pero la extensión debe ser .config
 
 Si deseen agregar más configuraciones se pueden establecer. Para esto puede remitirse a la documentación de PostgREST para ver que las opciones de configuración disponibles.
 
-5. Inicia el servidor PostgREST utilizando el archivo de configuración o las variables de entorno.
+7. Inicia el servidor PostgREST utilizando el archivo de configuración o las variables de entorno.
 
 Para iniciar el servidor PostgREST, primero debes asegurarte de haber creado el archivo de configuración o haber definido las variables de entorno necesarias. A continuación, sigue estos pasos:
 
-   5.1. Abre una terminal o consola de comandos.
+   7.1. Abre una terminal o consola de comandos.
 
-   5.2. Navega hasta el directorio donde se encuentra el archivo de configuración o donde has definido las variables de entorno.
+   7.2. Navega hasta el directorio donde se encuentra el archivo de configuración o donde has definido las variables de entorno.
 
-   5.3. Ejecuta el siguiente comando:
+   7.3. Ejecuta el siguiente comando:
     
     ```
+    
    "C:\Program Files\PostgreSQL\15\bin\postgrest.exe" C:\Users\{TuUsuario}\Documents\{CarpetaDeTuElección}\PostgREST\configuracion\postgrest.conf
+
     ```
 Este comando inicia el servidor en la URL `http://localhost:3000` (o cualquier otra configurada en el archivo `postgrest.conf`).
 
@@ -105,9 +107,9 @@ Si todo va bien, deberías ver un mensaje indicando que PostgREST se ha iniciado
 
 Una vez que el servidor PostgREST esté en funcionamiento, podrás interactuar con la API RESTful que has creado utilizando HTTP requests.
 
-6. Accede a la API RESTful utilizando las rutas generadas por PostgREST, que siguen la convención RESTful y utilizan los nombres de las vistas y funciones que definiste en tu base de datos.
+8. Accede a la API RESTful utilizando las rutas generadas por PostgREST, que siguen la convención RESTful y utilizan los nombres de las vistas y funciones que definiste en tu base de datos.
 
-7. Realiza las solicitudes HTTP adecuadas para acceder a los recursos de la API RESTful, como GET, POST, PUT y DELETE, según sea necesario. Recuerda apoyarte de la documentación, en especial este enlace https://postgrest.org/en/stable/api.html#operators
+9. Realiza las solicitudes HTTP adecuadas para acceder a los recursos de la API RESTful, como GET, POST, PUT y DELETE, según sea necesario. Recuerda apoyarte de la documentación, en especial este enlace https://postgrest.org/en/stable/api.html#operators
 
 ## Licencia 📄
 
