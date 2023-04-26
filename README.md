@@ -97,7 +97,7 @@ Para iniciar el servidor PostgREST, primero debes asegurarte de haber creado el 
    7.3. Ejecuta el siguiente comando:
     
     "```"
-   "C:\Program Files\PostgreSQL\15\bin\postgrest.exe" C:\Users\{TuUsuario}\Documents\{CarpetaDeTuElección}\PostgREST\configuracion\postgrest.conf
+   /"C:\Program Files\PostgreSQL\15\bin\postgrest.exe"/ C:\Users\TuUsuario\Documents\CarpetaDeTuElección\PostgREST\configuracion\postgrest.conf
     "```"
 Este comando inicia el servidor en la URL `http://localhost:3000` (o cualquier otra configurada en el archivo `postgrest.conf`).
 
